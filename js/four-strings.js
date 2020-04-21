@@ -4,7 +4,7 @@ var s1 = 'rania'
 console.log(s1.charAt(1));
 
 //charCodeAt
-console.log(s1.charAt(1));
+console.log(s1.charCodeAt(1));
 
 //concat
 var s2 = s1.concat('abc', '12');
