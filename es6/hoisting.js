@@ -4,7 +4,7 @@ var a = 1;
 
 function b() {
     //    function a() { }  // a is hoisted and defined as local variable
-    a = 10;
+    a = 10; //global variables are not hoised
     return;
 
     function a() { }
@@ -52,3 +52,13 @@ var myVar = 'foo';
     var myVar = 'bar';
     console.log('New value is: ' + myVar);
 })();
+
+//4
+var a = 5;
+function print() {
+    console.log(a)//5
+    console.log(b)//b is not defined
+    a = 10;
+    b = 1;
+}
+print();

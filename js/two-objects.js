@@ -30,7 +30,7 @@ delete obj4.a;
 obj4.z = 'z';
 
 /**Object.seal */
-//similar to freeze
+//similar to const
 obj5 = Object.seal(obj);
 obj5.a = 'abc';
 delete obj5.a;
